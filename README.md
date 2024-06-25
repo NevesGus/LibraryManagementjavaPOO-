@@ -1,76 +1,76 @@
-# Biblioteca de Gerenciamento - Relatório
+# Library Management System - Report
 
-## Introdução
+## Introduction
 
-Este projeto é uma aplicação de gerenciamento de biblioteca desenvolvida em Java. A aplicação permite gerenciar inventário de livros, registros de clientes, transações de empréstimos e inclui um sistema de autenticação de usuários para controle de acesso.
+This project is a library management application developed in Java. The application allows for managing book inventory, customer records, loan transactions, and includes a user authentication system for access control.
 
-## Funcionalidades do Sistema
+## System Features
 
-### 1. Gerenciamento de Livros
-- **Adicionar Livro**: Permite adicionar novos livros ao inventário da biblioteca.
-- **Excluir Livro**: Permite remover livros do inventário da biblioteca com base no ISBN.
-- **Pesquisar Livro**: Permite procurar livros no inventário por ISBN e exibir suas informações.
+### 1. Book Management
+- **Add Book**: Allows adding new books to the library inventory.
+- **Delete Book**: Allows removing books from the library inventory based on ISBN.
+- **Search Book**: Allows searching for books in the inventory by ISBN and displaying their information.
 
-### 2. Gerenciamento de Clientes
-- **Adicionar Cliente**: Permite adicionar novos clientes ao sistema.
-- **Excluir Cliente**: Permite remover clientes do sistema com base no nome.
-- **Pesquisar Cliente**: Permite procurar clientes no sistema por nome e exibir suas informações.
+### 2. Customer Management
+- **Add Customer**: Allows adding new customers to the system.
+- **Delete Customer**: Allows removing customers from the system based on their name.
+- **Search Customer**: Allows searching for customers in the system by name and displaying their information.
 
-### 3. Gerenciamento de Empréstimos
-- **Adicionar Empréstimo**: Permite registrar novos empréstimos de livros para clientes.
-- **Excluir Empréstimo**: Permite remover registros de empréstimos do sistema com base no ISBN do livro e no nome do cliente.
-- **Pesquisar Empréstimo**: Permite procurar empréstimos no sistema e exibir informações detalhadas sobre eles.
+### 3. Loan Management
+- **Add Loan**: Allows registering new book loans to customers.
+- **Delete Loan**: Allows removing loan records from the system based on the book's ISBN and the customer's name.
+- **Search Loan**: Allows searching for loans in the system and displaying detailed information about them.
 
-### 4. Autenticação de Usuários
-- **Login de Usuários**: Sistema de login para autenticação de usuários, restringindo o acesso às funcionalidades da aplicação com base em suas credenciais.
-- **Adicionar Usuário**: Permite adicionar novos usuários ao sistema (apenas administradores).
-- **Remover Usuário**: Permite remover usuários do sistema (apenas administradores).
+### 4. User Authentication
+- **User Login**: Login system for user authentication, restricting access to application features based on their credentials.
+- **Add User**: Allows adding new users to the system (administrators only).
+- **Remove User**: Allows removing users from the system (administrators only).
 
-## Estrutura do Código
+## Code Structure
 
 ### 1. `Livro.java`
-Classe que representa um livro com atributos como título, autor, ISBN, categoria e disponibilidade.
+Class representing a book with attributes like title, author, ISBN, category, and availability.
 
 ### 2. `Cliente.java`
-Classe que representa um cliente com atributos como nome, endereço e contato.
+Class representing a customer with attributes like name, address, and contact information.
 
 ### 3. `Emprestimo.java`
-Classe que representa um empréstimo com atributos como livro, cliente, data de empréstimo e data de devolução.
+Class representing a loan with attributes like book, customer, loan date, and return date.
 
 ### 4. `CSVUtils.java`
-Classe utilitária para manipulação de arquivos CSV, permitindo salvar, ler e excluir dados de livros, clientes e empréstimos.
+Utility class for handling CSV files, allowing saving, reading, and deleting data for books, customers, and loans.
 
 ### 5. `UserAuth.java`
-Classe responsável pela autenticação de usuários, mantendo um mapa de usuários e senhas e métodos para autenticação, adição e remoção de usuários.
+Class responsible for user authentication, maintaining a map of users and passwords, and methods for authentication, adding, and removing users.
 
 ### 6. `LibraryGUI.java`
-Classe que implementa a interface gráfica da aplicação usando Swing. Inclui telas para login, gerenciamento de livros, gerenciamento de clientes e exibição de informações.
+Class implementing the application's graphical interface using Swing. Includes screens for login, book management, customer management, and information display.
 
-## Como Executar o Programa
+## How to Run the Program
 
-1. **Pré-requisitos**: Certifique-se de ter o JDK (Java Development Kit) instalado na sua máquina.
-2. **Compilação**: Compile as classes Java utilizando o comando:
-    ```sh
-    javac *.java
-    ```
-3. **Execução**: Execute a aplicação com o comando:
-    ```sh
-    java LibraryGUI
-    ```
-4. **Login**: Ao iniciar a aplicação, será exibida uma tela de login. Use as credenciais padrão:
-    - **Usuário**: `librarian`
-    - **Senha**: `lib123`
-    ou
-    - **Usuário**: `admin`
-    - **Senha**: `admin123`
+1. **Prerequisites**: Make sure you have the JDK (Java Development Kit) installed on your machine.
+2. **Compilation**: Compile the Java classes using the command:
+   ```sh
+   javac *.java
+   ```
+3. **Execution**: Run the application with the command:
+   ```sh
+   java LibraryGUI
+   ```
+4. **Login**: When starting the application, a login screen will be displayed. Use the default credentials:
+   - **Username**: `librarian`
+   - **Password**: `lib123`
+   or
+   - **Username**: `admin`
+   - **Password**: `admin123`
 
-## Possíveis Melhorias
-- **Botão de emprestimo**: Incluir nas opções da interface, um botão para empréstimo do livro.
-- **Validação de Entradas**: Implementar validação de entradas para garantir que os dados fornecidos pelos usuários sejam válidos.
-- **Relatórios e Estatísticas**: Adicionar funcionalidades para geração de relatórios e estatísticas sobre livros, clientes e empréstimos.
-- **Interface Gráfica Aprimorada**: Melhorar a interface gráfica para uma melhor experiência do usuário.
-- **Persistência em Banco de Dados**: Substituir os arquivos CSV por um banco de dados para maior escalabilidade e eficiência.
+## Possible Improvements
+- **Loan Button**: Include a loan button in the interface options.
+- **Input Validation**: Implement input validation to ensure that data provided by users is valid.
+- **Reports and Statistics**: Add features for generating reports and statistics on books, customers, and loans.
+- **Enhanced Graphical Interface**: Improve the graphical interface for a better user experience.
+- **Database Persistence**: Replace CSV files with a database for greater scalability and efficiency.
 
-## Conclusão
+## Conclusion
 
-Este projeto fornece uma base sólida para um sistema de gerenciamento de biblioteca com funcionalidades essenciais e uma interface gráfica intuitiva. Com algumas melhorias e expansões, pode se tornar uma ferramenta ainda mais poderosa e útil para gerenciamento de bibliotecas.
+This project provides a solid foundation for a library management system with essential features and an intuitive graphical interface. With some improvements and expansions, it can become an even more powerful and useful tool for library management.
