@@ -51,11 +51,12 @@ Class implementing the application's graphical interface using Swing. Includes s
 1. **Prerequisites**: Make sure you have the JDK (Java Development Kit) installed on your machine.
 2. **Compilation**: Compile the Java classes using the command:
    
-   - javac *.java
+   `javac *.java`
+   
    
 3. **Execution**: Run the application with the command:
    
-   - java Main.java
+   `java Main.java`
    
 4. **Login**: When starting the application, a login screen will be displayed. Use the default credentials:
    - **Username**: `librarian`
