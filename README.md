@@ -65,7 +65,7 @@ Classe que implementa a interface gráfica da aplicação usando Swing. Inclui t
     - **Senha**: `admin123`
 
 ## Possíveis Melhorias
-
+- **Botão de emprestimo**: Incluir nas opções da interface, um botão para empréstimo do livro.
 - **Validação de Entradas**: Implementar validação de entradas para garantir que os dados fornecidos pelos usuários sejam válidos.
 - **Relatórios e Estatísticas**: Adicionar funcionalidades para geração de relatórios e estatísticas sobre livros, clientes e empréstimos.
 - **Interface Gráfica Aprimorada**: Melhorar a interface gráfica para uma melhor experiência do usuário.
