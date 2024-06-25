@@ -57,7 +57,8 @@ Class implementing the application's graphical interface using Swing. Includes s
 3. **Execution**: Run the application with the command:
    
    `java Main.java`
-   
+
+   
 4. **Login**: When starting the application, a login screen will be displayed. Use the default credentials:
    - **Username**: `librarian`
    - **Password**: `lib123`
