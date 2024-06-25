@@ -54,9 +54,9 @@ Class implementing the application's graphical interface using Swing. Includes s
    javac *.java
    ```
 3. **Execution**: Run the application with the command:
-   ```sh
+   
    java LibraryGUI
-   ```
+   
 4. **Login**: When starting the application, a login screen will be displayed. Use the default credentials:
    - **Username**: `librarian`
    - **Password**: `lib123`
