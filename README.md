@@ -67,7 +67,6 @@ Class implementing the application's graphical interface using Swing. Includes s
    - **Password**: `admin123`
 
 ## Possible Improvements
-- **Loan Button**: Include a loan button in the interface options.
 - **Input Validation**: Implement input validation to ensure that data provided by users is valid.
 - **Reports and Statistics**: Add features for generating reports and statistics on books, customers, and loans.
 - **Enhanced Graphical Interface**: Improve the graphical interface for a better user experience.
